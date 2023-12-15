@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+        body {
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .peringatam {
+            padding: 5rem;
+            text-align: center;
+            color: #000000; 
+            border-radius: 1rem;
+            line-height: 4rem;
+        }
+
+        .peringatam h1 {
+            margin: 0;
+        }
+
+        .peringatam span {
+            color: #0066ff; /* Warna teks kuning pada span */
+        }
+        .peringatam a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+            margin: 1rem;
+            background-color: #0066ff;
+            border-radius: 1rem;
+        }
+        .peringatam a:hover {
+            color: rgb(0, 174, 255);
+            background-color: #ffffff;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMATEK.LOGIN</title>
+    <link rel="icon" href="MEDIA/HIMATEK 2.png" type="icon">
+</head>
+<body>
+    <div class="peringatam">
+        <h1>
+        Login untuk masuk ke web <span>HIMATEK</span><br>
+        <a href="REGISTRASI.html">Login</a>
+        </h1>
+    </div>
+
+    <script>
+        var nama = prompt("Nama:");
+        var nim = prompt("NIM:");
+        var password = prompt("Password:");
+
+        if (nama && nim && password && password.toLowerCase() === "admin") {
+            var pesan = "Selamat datang, " + nama + "! \nNIM: " + nim + "\nPassword: " + password;
+            alert(pesan);
+
+            window.location.href = "HIMATEK.html";
+        } else {
+            alert("Password yang anda masukan salah");
+            window.location.href = "../index.html";
+        }
+    </script>
+
+</body>
+</html>

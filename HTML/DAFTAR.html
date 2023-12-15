@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>HIMATEK.DAFTAR</title>
+</head>
+<body>
+   <div class="login">
+      <img src="MEDIA/bg2.jpg" alt="login image" class="login__img">
+
+      <form action="" class="login__form" id="loginForm">
+         <h1 class="login__title">Formulir Pendaftaran</h1>
+
+         <div class="login__content">
+            <div class="login__box">
+               <i class="ri-user-3-line login__icon"></i>
+               <div class="login__box-input">
+                  <input type="text" required class="login__input" id="login-name" placeholder=" ">
+                  <label for="login-name" class="login__label">Nama lengkap</label>
+               </div>
+            </div>
+
+            <div class="login__box">
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
+   <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+</svg>               <div class="login__box-input">
+                  <input type="text" required class="login__input" id="login-nim" placeholder=" ">
+                  <label for="login-nim" class="login__label">NIM</label>
+               </div>
+            </div>
+
+            <div class="login__box">
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor">
+   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+   <line x1="8" y1="21" x2="16" y2="21"></line>
+   <line x1="12" y1="17" x2="12" y2="21"></line>
+</svg>               <div class="login__box-input">
+                  <input type="text" required class="login__input" id="login-jurusan" placeholder=" ">
+                  <label for="login-jurusan" class="login__label">Prodi</label>
+               </div>
+            </div>
+
+            <div class="login__box">
+               <i class="ri-mail-line login__icon"></i>
+               <div class="login__box-input">
+                  <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                  <label for="login-email" class="login__label">Email</label>
+               </div>
+            </div>
+
+            <div class="login__box">
+               <i class="ri-phone-line login__icon"></i>
+               <div class="login__box-input">
+                  <input type="tel" required class="login__input" id="login-phone" placeholder=" ">
+                  <label for="login-phone" class="login__label">Nomor HP</label>
+               </div>
+            </div>
+         </div>
+
+         <button type="button" class="login__button" onclick="showFormData()">DAFTAR</button>
+
+         <p class="login__register">
+            Kembali ke halaman utama<a href="../index.html">HOME</a>
+         </p>
+      </form>
+   </div>
+      <script src="JS/indext.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+/* Tambahkan gaya untuk navigasi yang berubah saat digulir ke bawah */
+.header-scroll {
+    background-color: #ff0000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #002857;
+    color: #ffffff;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(1, 1, 1);
+    border-bottom: 3px solid #393939;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 9);
+
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .navbar-logo span {
+    color:#005eec ;
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #000000;
+}
+
+.navbar .navbar-nav a::after  {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+.navbar-nav a:hover{
+    padding: 0.4rem;
+        background-color: #0066ff;
+        border-radius: 5px;
+}
+.navbar-nav a{
+    padding: 0.4rem;
+        background-color:rgb(1, 1, 1);
+        border-radius: 5px;
+}
+
+.navbar-extra {
+    padding: 0.3rem;
+    background-color: #005eec;
+    border-radius: 5px;
+
+}
+
+.navbar-extra:hover {
+    padding: 0.3rem;
+    background-color: #001657;
+    border-radius: 5px;
+
+}
+
+.navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: #005eec;
+}
+
+.navbar-navv {
+    display: none;
+}
+.navbar-navjs{
+    text-align: center;
+        background-color: #005eec;
+        border-bottom: solid rgb(0, 31, 134);
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 9);
+        position: fixed;
+        width: 100%;
+        /* padding-top: 10rem; */
+        top: 5rem;
+        /* left: 1rem; */
+        /* right: 115rem; */
+        /* height: 40px; */
+        /* top: 90%; */
+        z-index: 9999;
+        padding: 1rem;
+            border-radius: 5px;
+
+
+}
+
+.navbar-extrajs:hover,
+.navbar-navjs:hover {
+        background-color: #001657;
+        border-radius: 5px;
+
+}
+
+.navbar-navjs a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar-navjs a:hover{
+    color: #005eec;
+}
+/* display none js */
+.navbar-navjs{
+    display: none;
+}
+
+/* ================================================== */
+
+.main{
+    padding: 4rem;
+    margin: 0;
+    justify-content: center;
+
+}
+.content-visi-misi{
+    margin: 0;
+}
+.visi {
+    padding:1.5rem ;
+    background-color: #005eec;
+    color: white;
+    border: 5px solid white;
+}
+.misi {
+    padding: 1.5rem;
+    background-color: #005eec;
+    color: white;
+    border: 5px solid white;
+}
+.visi h1{
+    color: yellow;
+    
+}
+.misi h1{
+    color: yellow;  
+}
+.visi a{
+    text-decoration: none;
+    list-style: none;    
+}
+.misi a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .background{
+    background-size: cover;
+    padding: 10rem;
+}
+.contentt{
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: #0016576b;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+}
+.side{
+    text-align: center;
+}
+.colum h1{
+    text-align: center;
+    color: yellow;
+    border-bottom: solid #0066ff9d;
+    margin: 0;
+    padding: 0;
+}
+.colum ol {
+    font-weight: 700;
+    
+}
+.sejarah{
+    text-align: center;
+    padding: 5rem;
+    background-color: #0066ff;
+    margin: 0;
+
+
+}
+
+
+.fullscreen-bg video{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+ 
+.bg-video {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%; 
+}
+
+.img-bg{
+    padding: 10rem;
+    background-image: url(../MEDIA/bg2.jpg);
+    
+}
+
+ */
